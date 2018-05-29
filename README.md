@@ -5,7 +5,7 @@
 > This template is Vue 2.0 compatible. 
 > This template is Webpack 3 compatible
 
-![image](https://user-images.githubusercontent.com/1437734/40678367-6a7e1fa2-634e-11e8-9d38-b674a4a52a96.png)
+![image](https://user-images.githubusercontent.com/1437734/40678483-a7630d06-634e-11e8-81a5-68c68447dea3.png)
 
 ### Usage
 
