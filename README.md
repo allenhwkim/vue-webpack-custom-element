@@ -8,6 +8,7 @@
 ### Usage
 
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
+However it's not related to Vue, but to webpack/custom element.
 
 ``` bash
 $ npm install -g vue-cli
