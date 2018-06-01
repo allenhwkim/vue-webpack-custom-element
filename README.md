@@ -1,8 +1,8 @@
 # vue-webpack-custom-element
 
-> VueJS + Webpack + Custom Element + Library
+> Webpack + Custom Element + Library
 
-> This template is Vue 2.0 compatible. 
+> This template is Vue CLI compatible. 
 > This template is Webpack 3 compatible
 
 ### Usage
