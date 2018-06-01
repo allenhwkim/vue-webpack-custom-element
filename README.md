@@ -5,6 +5,8 @@
 > This template is Vue CLI compatible. 
 > This template is Webpack 3 compatible
 
+![image](https://user-images.githubusercontent.com/1437734/40678483-a7630d06-634e-11e8-81a5-68c68447dea3.png)
+
 ### Usage
 
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
