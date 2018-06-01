@@ -1,13 +1,21 @@
-import Vue from 'vue'
-import VueCustomElement from 'vue-custom-element'
+// import './custom-element-polyfill.js';
+// new CustomEvent not working on IE11.
+(function () {
 
-import ShareButtonsComponent from './ShareButtonsComponent.vue'
-import HelloWorldComponent from './HelloWorldComponent.vue'
-import ClockComponent from './ClockComponent.vue'
+  if ( typeof window.CustomEvent === "function" ) return false;
 
-Vue.use(VueCustomElement)
+  function CustomEvent ( event, params ) {
+    params = params || { bubbles: false, cancelable: false, detail: undefined };
+    var evt = document.createEvent( 'CustomEvent' );
+    evt.initCustomEvent( event, params.bubbles, params.cancelable, params.detail );
+    return evt;
+   }
 
-// import and register your component(s)
-Vue.customElement('share-buttons', ShareButtonsComponent)
-Vue.customElement('hello-world', HelloWorldComponent)
-Vue.customElement('my-clock', ClockComponent)
+  CustomEvent.prototype = window.Event.prototype;
+
+  window.CustomEvent = CustomEvent;
+})();
+
+import 'document-register-element';
+import './hello-custom-element/hello-custom-element.js';
+import './hello-clock/hello-clock.js';

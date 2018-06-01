@@ -1,40 +1,15 @@
-<!-- This file is only for development to make it sure VueJS custom elements work -->
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ name }}</title>
-    <!-- custom element polyfill for Firefox and IE11 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/document-register-element/1.4.1/document-register-element.js"></script>
-    <!-- built css files will be auto injected -->
-  </head>
   <body>
     <h1>Congratulations !</h1>
-    <p>Your have bundled your Vue.js component to fit <strong>any HTML/JS app</strong>.</p>
-    <p>The result of your great work :</p>
+    <p>Your have bundled your custom element to fit <strong>any HTML/JS app</strong>.</p>
 
     <p>
-      This is &lt;hello-world&gt; element
-      <hello-world></hello-world>
+      This is &lt;hello-custom-element&gt; element
+      <hello-custom-element 
+        world="Custom Element"
+        message="test message">
+      </hello-custom-element>
+      <hello-clock></hello-clock>
     </p>
-
-    <p>
-      This is &lt;share-buttons&gt; element
-      <share-buttons></share-buttons>
-    </p>
-
-    <p>
-      This is &lt;my-clock&gt; element
-      <my-clock></my-clock>
-    </p>
-
-    <p>
-    To make the custom element work, 
-    stylesheet and js needs to be included in your HTML as following
-    </p>
-    <pre>
-    &lt;link rel="stylesheet" href="my-custom-element.css" /&gt;
-    &lt;script src="my-custom-element.js"&gt;&lt;/script&gt;
-    </pre>
-    <!-- built js files will be auto injected -->
   </body>
 </html>
